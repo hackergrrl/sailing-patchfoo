@@ -74,13 +74,6 @@ sbot plugins.enable ssb-backlinks
 # restart sbot
 ```
 
-# Open patchfoo
-
-Direct your favourite web browser to [http://localhost:8027](http://localhost:8027).
-
-Click on the 'public' tab. You should start to see messages as the sync process
-with the pub server works.
-
 # Setting an identity
 
 Patchfoo doesn't (yet) have a user interface for writing a profile for yourself,
@@ -107,6 +100,13 @@ Set a profile description:
 ```
 $ sbot publish --type about --about PUBLIC_KEY --description 'hi im NAME, I like..'
 ```
+
+# Open patchfoo
+
+Direct your favourite web browser to [http://localhost:8027](http://localhost:8027).
+
+Click on the 'public' tab. You should start to see messages as the sync process
+with the pub server works.
 
 # License
 
