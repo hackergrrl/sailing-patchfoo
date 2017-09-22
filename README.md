@@ -4,6 +4,8 @@
 Scuttlebutt (SSB)](https://scuttlebut.nz). It uses HTML forms instead of
 client-side Javascript, making for a fast and low-power SSB experience.
 
+![screenshot](screenshot.jpg)
+
 # Install `sbot`
 
 Scuttlebot (the `sbot` command) is the secure scuttlebut server program. This is
