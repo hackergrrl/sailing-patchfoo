@@ -42,7 +42,7 @@ network, making them ideal for new users who don't know any peers yet.
 
 You can find an invite code from a pub
 [here](https://github.com/ssbc/scuttlebot/wiki/Pub-Servers), or ask in
-#scuttlebutt on Freenode IRC.
+`#scuttlebutt` on Freenode IRC.
 
 # Install patchfoo
 
