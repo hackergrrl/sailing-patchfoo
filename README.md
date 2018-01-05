@@ -2,8 +2,12 @@
 
 [Patchfoo](https://github.com/ssbc/patchfoo) is a simple web client for [Secure
 Scuttlebutt (SSB)](https://scuttlebut.nz), written by
-[cel](https://git.scuttlebot.io/%40f%2F6sQ6d2CMxRUhLpspgGIulDxDCwYD7DzFzPNr7u5AU%3D.ed25519). It uses HTML forms instead of
-client-side Javascript, making for a fast and low-power SSB experience.
+[cel](https://git.scuttlebot.io/%40f%2F6sQ6d2CMxRUhLpspgGIulDxDCwYD7DzFzPNr7u5AU%3D.ed25519).
+It uses HTML forms instead of client-side Javascript, making for a fast and
+low-power SSB experience. People who might enjoy this include folks on older
+computers, computers with small batteries, or people who just want a simple
+client that isn't very hard to [hack
+on](%25mgQ7t%2BaBDF71ZGmzQVk8yEQiB8Wj2dF5nmmVyYynOoQ%3D.sha256).
 
 ![screenshot](screenshot.jpg)
 
