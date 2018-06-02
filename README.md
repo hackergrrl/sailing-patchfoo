@@ -44,6 +44,16 @@ You can find an invite code from a pub
 [here](https://github.com/ssbc/scuttlebot/wiki/Pub-Servers), or ask in
 `#scuttlebutt` on Freenode IRC.
 
+# Install ssb-npm
+
+Many of patchfoo's javascript dependencies live on scuttlebutt itself, on a
+special ssb-based registry called
+[ssb-npm](http://git.scuttlebot.io/%25iqhz%2FsQCZCSp91JYAqfQPzHuDYrjw1geKPf1wJ1CvlA%3D.sha256).
+
+You can follow the guide [ssb-npm 101](https://github.com/noffle/ssb-npm-101) to
+get the registry set up and running locally, as well installing the `ssb-npm`
+command.
+
 # Install patchfoo
 
 As per the [patchfoo README](https://github.com/ssbc/patchfoo):
@@ -53,7 +63,7 @@ As per the [patchfoo README](https://github.com/ssbc/patchfoo):
 ```sh
 git clone https://github.com/ssbc/patchfoo
 cd patchfoo
-npm install
+ssb-npm install
 npm start
 ```
 
@@ -65,7 +75,7 @@ You'll need `sbot server` running in the background.
 cd ~/.ssb/node_modules
 git clone https://github.com/ssbc/patchfoo
 cd patchfoo
-npm install
+ssb-npm install
 sbot plugins.enable patchfoo
 # restart sbot
 ```
