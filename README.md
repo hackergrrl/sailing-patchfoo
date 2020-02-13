@@ -1,6 +1,6 @@
 # Patchfoo & SSB
 
-[Patchfoo](https://github.com/ssbc/patchfoo) is a simple web client for [Secure
+[Patchfoo](http://git.scuttlebot.io/%25YAg1hicat%2B2GELjE2QJzDwlAWcx0ML%2B1sXEdsWwvdt8%3D.sha256) is a simple web client for [Secure
 Scuttlebutt (SSB)](https://scuttlebut.nz), written by
 [cel](https://git.scuttlebot.io/%40f%2F6sQ6d2CMxRUhLpspgGIulDxDCwYD7DzFzPNr7u5AU%3D.ed25519).
 It uses HTML forms instead of client-side Javascript, making for a fast and
@@ -25,7 +25,7 @@ $ npm install --global scuttlebot
 ```
 
 or by following the [scuttlebot installation
-instructions](https://ssbc.github.io/docs/scuttlebot/install.html).
+instructions](https://handbook.scuttlebutt.nz/guides/ssb-server/install).
 
 Run `ssb-server start` to start your SSB peer.
 
@@ -56,7 +56,7 @@ command.
 
 # Install patchfoo
 
-As per the [patchfoo README](https://github.com/ssbc/patchfoo):
+As per the [patchfoo README](http://git.scuttlebot.io/%25YAg1hicat%2B2GELjE2QJzDwlAWcx0ML%2B1sXEdsWwvdt8%3D.sha256):
 
 ## Standalone
 
