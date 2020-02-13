@@ -11,13 +11,13 @@ on](%25mgQ7t%2BaBDF71ZGmzQVk8yEQiB8Wj2dF5nmmVyYynOoQ%3D.sha256).
 
 ![screenshot](screenshot.jpg)
 
-# Install `sbot`
+# Install `ssb-server`
 
-Scuttlebot (the `sbot` command) is the secure scuttlebut server program. This is
+Scuttlebot (the `ssb-server` command) is the secure scuttlebut server program. This is
 what finds, syncs, and manages the feeds of other SSB users, and lets you write
 messages to the network.
 
-Patchfoo depends on the `sbot` command being available. You can install this on
+Patchfoo depends on the `ssb-server` command being available. You can install this on
 your machine via [npm](https://npmjs.org)
 
 ```
@@ -27,7 +27,7 @@ $ npm install --global scuttlebot
 or by following the [scuttlebot installation
 instructions](https://ssbc.github.io/docs/scuttlebot/install.html).
 
-Run `sbot server` to start your SSB peer.
+Run `ssb-server start` to start your SSB peer.
 
 # Join the network
 
@@ -67,17 +67,17 @@ ssb-npm install
 npm start
 ```
 
-## As an `sbot` plugin
+## As an `ssb-server` plugin
 
-You'll need `sbot server` running in the background.
+You'll need `ssb-server start` running in the background.
 
 ```sh
 cd ~/.ssb/node_modules
 git clone https://github.com/ssbc/patchfoo
 cd patchfoo
 ssb-npm install
-sbot plugins.enable patchfoo
-# restart sbot
+ssb-server plugins.enable patchfoo
+# restart ssb-server
 ```
 
 ## Install extras
@@ -86,9 +86,9 @@ To most effectively render things, patchfoo needs the `ssb-backlinks` scuttlebot
 plugin:
 
 ```sh
-sbot plugins.install ssb-backlinks
-sbot plugins.enable ssb-backlinks
-# restart sbot
+ssb-server plugins.install ssb-backlinks
+ssb-server plugins.enable ssb-backlinks
+# restart ssb-server
 ```
 
 # Setting an identity
@@ -96,26 +96,26 @@ sbot plugins.enable ssb-backlinks
 Patchfoo doesn't (yet) have a user interface for writing a profile for yourself,
 such as setting your nickname, profile description, avatar, etc.
 
-Fortunately, you can use the `sbot` command to do this, by publishing JSON
+Fortunately, you can use the `ssb-server` command to do this, by publishing JSON
 messages by hand with type `about`. To see examples of any message type on SSB,
-you can run `sbot messagesByType about | less`.
+you can run `ssb-server messagesByType about | less`.
 
 You can find your own public key (your true identity) using
 
 ```
-$ sbot whoami
+$ ssb-server whoami
 ```
 
 Set your nick name:
 
 ```
-$ sbot publish --type about --about PUBLIC_KEY --name NAME
+$ ssb-server publish --type about --about PUBLIC_KEY --name NAME
 ```
 
 Set a profile description:
 
 ```
-$ sbot publish --type about --about PUBLIC_KEY --description 'hi im NAME, I like..'
+$ ssb-server publish --type about --about PUBLIC_KEY --description 'hi im NAME, I like..'
 ```
 
 # Open patchfoo
