@@ -91,33 +91,6 @@ ssb-server plugins.enable ssb-backlinks
 # restart ssb-server
 ```
 
-# Setting an identity
-
-Patchfoo doesn't (yet) have a user interface for writing a profile for yourself,
-such as setting your nickname, profile description, avatar, etc.
-
-Fortunately, you can use the `ssb-server` command to do this, by publishing JSON
-messages by hand with type `about`. To see examples of any message type on SSB,
-you can run `ssb-server messagesByType about | less`.
-
-You can find your own public key (your true identity) using
-
-```
-$ ssb-server whoami
-```
-
-Set your nick name:
-
-```
-$ ssb-server publish --type about --about PUBLIC_KEY --name NAME
-```
-
-Set a profile description:
-
-```
-$ ssb-server publish --type about --about PUBLIC_KEY --description 'hi im NAME, I like..'
-```
-
 # Open patchfoo
 
 Direct your favourite web browser to [http://localhost:8027](http://localhost:8027).
