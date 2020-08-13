@@ -86,7 +86,7 @@ To most effectively render things, patchfoo needs the `ssb-backlinks` scuttlebot
 plugin:
 
 ```sh
-ssb-server plugins.install ssb-backlinks
+ssb-server plugins.install ssb-backlinks --yes
 ssb-server plugins.enable ssb-backlinks
 # restart ssb-server
 ```
